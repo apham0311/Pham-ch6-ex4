@@ -7,14 +7,14 @@
 #include <vector>
 using namespace std;
 
-class NameValue
+class Name_Value
 {
 public:
     int value;
     string name;
 
     //constructor
-    NameValue(int numbers, string characters)
+    Name_Value(int numbers, string characters)
     {
         value = numbers;
         name = characters;
@@ -27,7 +27,7 @@ int main() {
     string name;
     int value;
 
-    vector<NameValue> data;
+    vector<Name_Value> data;
 
     //This will loop through for all inputs
     while(cin >> name >> value)
@@ -49,7 +49,7 @@ int main() {
         }
 
 
-        data.push_back(NameValue(value,name));
+        data.push_back(Name_Value(value,name));
 
     }
 
